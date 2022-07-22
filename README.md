@@ -1,6 +1,6 @@
 # Kestrel Homebrew Tap
 
-Install kestrel in homebrew
+Install kestrel with homebrew
 
 ## Installation
 
