@@ -6,7 +6,7 @@ class KestrelCli < Formula
   license "BSD-3-Clause"
 
   bottle do
-    root_url "https://storage.googleapis.com/kestrel-assets/"
+    root_url "https://storage.googleapis.com/kestrel-assets"
     sha256 cellar: :any_skip_relocation, arm64_monterey: "481adff64025cec409a1d2010ca399f19942763e40413cb299d18bb8098cff21"
   end
 
