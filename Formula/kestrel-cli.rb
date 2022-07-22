@@ -9,7 +9,7 @@ class KestrelCli < Formula
 
   def install
     system "cargo", "build", "--release"
-    out_dir = Dir["target/release"]
+    out_dir = Dir["target/release"].first
     bin.install "#{out_dir}/kestrel"
     man1.install "docs/man/kestrel.1"
     bash_completion.install "completion/kestrel.bash-completion"
