@@ -38,6 +38,6 @@ class KestrelCli < Formula
   end
 
   test do
-    assert_equal "v#{version}" shell_output("#{bin}/kestrel --version").chomp
+    assert_equal "v#{version}", shell_output("#{bin}/kestrel --version").chomp
   end
 end
