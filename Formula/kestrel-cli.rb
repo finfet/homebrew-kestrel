@@ -14,6 +14,7 @@ class KestrelCli < Formula
 
     arch = "arm64"
     os = "macos"
+    prog_version = "0.10.0"
 
     on_intel do
       arch = "amd64"
@@ -23,7 +24,8 @@ class KestrelCli < Formula
       raise "Homebrew linux is not yet supported. Try the native linux releases."
     end
 
-    url "https://storage.googleapis.com/kestrel-assets/kestrel-#{os}-v#{version}-#{arch}.tar.gz"
+    url "https://storage.googleapis.com/kestrel-assets/kestrel-#{os}-v#{prog_version}-#{arch}.tar.gz"
+    version prog_version
     sha256 checksums["#{os}-#{arch}"]
   end
 
@@ -38,6 +40,6 @@ class KestrelCli < Formula
   end
 
   test do
-    assert_equal "v#{version}", shell_output("#{bin}/kestrel --version").chomp
+    assert_equal "v0.10.0", shell_output("#{bin}/kestrel --version").chomp
   end
 end
