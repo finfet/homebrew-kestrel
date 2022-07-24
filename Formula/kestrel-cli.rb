@@ -36,7 +36,7 @@ class KestrelCli < Formula
     man1.install "man/kestrel.1"
     bash_completion.install "completion/kestrel.bash-completion"
     doc.install "LICENSE.txt"
-    doc.install "THIRD-PARY-LICENSE.txt"
+    doc.install "THIRD-PARTY-LICENSE.txt"
   end
 
   test do
