@@ -9,4 +9,4 @@ jobs:
           brew update
           brew tap finfet/kestrel
           brew install kestrel-cli
-          kestrel-cli --version
+          kestrel --version
