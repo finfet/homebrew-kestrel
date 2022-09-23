@@ -1,7 +1,7 @@
 class KestrelCli < Formula
   desc "File encryption done right"
   homepage "https://getkestrel.com"
-  url "https://kestrel-assets.s3.us-west-2.amazonaws.com/v0.10.0/kestrel-macos-v0.10.0-arm64.tar.gz"
+  url "https://kestrel-assets.s3.us-west-002.backblazeb2.com/v0.10.0/kestrel-macos-v0.10.0-arm64.tar.gz"
   sha256 "5deac28cac4e4beebba18ca8869e2e6c48ffffefc057c9e6440238f6cc524769"
   license "BSD-3-Clause"
   version "0.10.0"
@@ -24,7 +24,7 @@ class KestrelCli < Formula
       raise "Homebrew linux is not yet supported. Try the native linux releases."
     end
 
-    url "https://kestrel-assets.s3.us-west-2.amazonaws.com/v#{prog_version}/kestrel-#{os}-v#{prog_version}-#{arch}.tar.gz"
+    url "https://kestrel-assets.s3.us-west-002.backblazeb2.com/v#{prog_version}/kestrel-#{os}-v#{prog_version}-#{arch}.tar.gz"
     version prog_version
     sha256 checksums["#{os}-#{arch}"]
   end
