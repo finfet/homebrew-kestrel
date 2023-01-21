@@ -2,9 +2,9 @@ class KestrelCli < Formula
   desc "File encryption done right"
   homepage "https://getkestrel.com"
   license "BSD-3-Clause"
-  version "0.10.0"
+  version "0.10.1"
   url "https://github.com/finfet/kestrel/archive/v#{version}.tar.gz"
-  sha256 "8144ccc9272b7bdd0a85488715d93e5c9ab8d234acdfefd93c80ee8b5360bd1e"
+  sha256 "1f69fb546bb87431ea3cde80accee1909f40dab2cd2b82f2f1bbf11eb5baf21c"
 
   depends_on "rust" => :build
 
