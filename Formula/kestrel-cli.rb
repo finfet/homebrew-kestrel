@@ -4,7 +4,7 @@ class KestrelCli < Formula
   license "BSD-3-Clause"
   version "0.11.0"
   url "https://github.com/finfet/kestrel/archive/v#{version}.tar.gz"
-  sha256 "115b1516b488ce569ee2a4a6c60bbb9077b97c78b311320288934ad101361aee"
+  sha256 "904bbf37618816f3f1b18d4df4a097d7dda335ce055791533f05a07cc5dc3841"
 
   depends_on "rust" => :build
 
