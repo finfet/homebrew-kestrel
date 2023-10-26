@@ -2,11 +2,11 @@ name: Homebrew Tap Test
 on: [push]
 jobs:
   test-tap:
-    runs-on: macos-latest
+    runs-on: macos-11
     steps:
       - name: Homebrew Tap
         run: |
           brew update
           brew tap finfet/kestrel
-          brew install finfet/kestrel/kestrel-cli
+          brew install kestrel-cli
           kestrel --version
