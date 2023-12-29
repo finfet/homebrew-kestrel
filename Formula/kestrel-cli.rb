@@ -5,6 +5,12 @@ class KestrelCli < Formula
   sha256 "83fc5dc6a487cefc1ef3c9d07b60193c1292b5988afe05d9ed11c98e68a871da"
   license "BSD-3-Clause"
 
+  bottle do
+    root_url "https://bottles.getkestrel.com"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "c6e3ffcd2bd4ded0b9d5b186b81d161227e6aba1599c2b0e2461eb487ec91a5a"
+  end
+
   depends_on "rust" => :build
 
   def install
