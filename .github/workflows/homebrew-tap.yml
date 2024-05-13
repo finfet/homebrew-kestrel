@@ -1,8 +1,16 @@
 name: Homebrew Tap Test
 on: [push]
 jobs:
+  build-bottle-macos13:
+    runs-on: macos-14
+    steps:
+      - name: Build Bottle
+        run: |
+          brew tap finfet/kestrel
+          brew install --build-bottle kestrel-cli
+          brew bottle --keep-old --root-url https://bottles.getkestrel.com kestrel-cli
   test-tap:
-    runs-on: macos-latest
+    runs-on: macos-14
     steps:
       - name: Homebrew Tap
         run: |
