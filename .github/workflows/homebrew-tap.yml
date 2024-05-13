@@ -8,8 +8,15 @@ jobs:
         run: |
           brew tap finfet/kestrel
           brew install --build-bottle kestrel-cli
-          brew bottle --keep-old --root-url https://bottles.getkestrel.com kestrel-cli
-  test-tap:
+          brew bottle --keep-old --root-url https://bottles.getkestrel.com kestrel-cli > bottle-instructions.txt
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: bottle-data
+          path: |
+            bottle-instructions.txt
+            kestrel-*.bottle.tar.gz
+  try-install:
     runs-on: macos-14
     steps:
       - name: Homebrew Tap
