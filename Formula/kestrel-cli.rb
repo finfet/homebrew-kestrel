@@ -7,7 +7,7 @@ class KestrelCli < Formula
 
   bottle do
     root_url "https://bottles.getkestrel.com"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "43945b36e68d7abb7750011fc7a0aaf54e6e5b9ba2f008d7cb0049924193b3a2"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "924c3d39970cb85e082fde80c4005b4adf76705982560cd7229b1a6d7e4bad2c"
   end
 
   depends_on "rust" => :build
