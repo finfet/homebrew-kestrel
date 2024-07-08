@@ -1,8 +1,8 @@
 class KestrelCli < Formula
   desc "File encryption done right"
   homepage "https://getkestrel.com"
-  url "https://getkestrel.com/releases/v1.0.1/kestrel-1.0.1.tar.gz"
-  sha256 "c722cdf36c8a38606952c5891184bbc2bcc9cd89aa047eab2fc66c5419faf840"
+  url "https://getkestrel.com/releases/v1.0.2/kestrel-1.0.2.tar.gz"
+  sha256 "5dca8a6a95903fa72d959c8308c3758b054f889e5f5a41a0c7766714a58d9d29"
   license "BSD-3-Clause"
 
   bottle do
