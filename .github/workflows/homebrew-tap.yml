@@ -1,8 +1,8 @@
 name: Homebrew Tap Test
 on: [push]
 jobs:
-  build-bottle-macos14:
-    runs-on: macos-14
+  build-bottle-macos:
+    runs-on: macos-26
     steps:
       - name: Build Bottle
         run: |
@@ -17,7 +17,7 @@ jobs:
             bottle-instructions.txt
             kestrel-*.bottle.tar.gz
   try-install:
-    runs-on: macos-14
+    runs-on: macos-26
     steps:
       - name: Homebrew Tap
         run: |
