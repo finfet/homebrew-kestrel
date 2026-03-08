@@ -1,7 +1,7 @@
 name: Homebrew Tap Test
 on: [push]
 jobs:
-  build-bottle-macos:
+  build-bottle-macos26:
     runs-on: macos-26
     steps:
       - name: Build Bottle
@@ -12,7 +12,22 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: bottle-data
+          name: bottle-data-macos26
+          path: |
+            bottle-instructions.txt
+            kestrel-*.bottle.tar.gz
+  build-bottle-macos15:
+    runs-on: macos-15
+    steps:
+      - name: Build Bottle
+        run: |
+          brew tap finfet/kestrel
+          brew install --build-bottle kestrel-cli
+          brew bottle --keep-old --root-url https://bottles.getkestrel.com kestrel-cli > bottle-instructions.txt
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: bottle-data-macos15
           path: |
             bottle-instructions.txt
             kestrel-*.bottle.tar.gz
